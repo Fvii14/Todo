@@ -1,0 +1,169 @@
+:root {
+    --vp-c-brand-1: #54debd;
+    --vp-c-brand-2: #3fd4a8;
+    --vp-c-brand-3: #2bca93;
+    --vp-c-brand-soft: rgba(84, 222, 189, 0.14);
+
+    --vp-c-brand-text-1: #2bca93;
+    --vp-c-brand-text-2: #3fd4a8;
+    --vp-c-brand-text-3: #54debd;
+}
+
+.dark {
+    --vp-c-brand-1: #5ee9c7;
+    --vp-c-brand-2: #54debd;
+    --vp-c-brand-3: #3fd4a8;
+    --vp-c-brand-soft: rgba(84, 222, 189, 0.16);
+
+    --vp-c-brand-text-1: #5ee9c7;
+    --vp-c-brand-text-2: #54debd;
+    --vp-c-brand-text-3: #3fd4a8;
+}
+
+.VPHomeHero {
+    text-align: center !important;
+    max-width: 100% !important;
+    padding: 0 2rem;
+}
+
+.VPHomeHero .main {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.VPHomeHero .name,
+.VPHomeHero .text,
+.VPHomeHero .tagline {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+}
+
+.VPHomeHero .name {
+    width: 100% !important;
+}
+
+.VPHomeHero .text {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    font-size: 3rem !important;
+}
+
+.VPHomeHero .tagline {
+    width: 100% !important;
+}
+
+.VPNav,
+.VPNavBar,
+.VPNavBar.top,
+.VPNavBar:not(.top),
+.VPNav.has-sidebar,
+.VPNav:not(.has-sidebar),
+.VPNav.wrapper {
+    background: rgba(84, 222, 189, 0.15) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(84, 222, 189, 0.15);
+}
+
+.VPNavBar:not(.top),
+.VPNavBar.home:not(.top) {
+    background: rgba(84, 222, 189, 0.15) !important;
+}
+
+.VPNav .container,
+.VPNav .content,
+.VPNav .title,
+.VPNav .nav,
+.VPNavBar .container,
+.VPNavBar .content {
+    background: transparent !important;
+}
+
+.VPNavBar .title,
+.VPNavBar .title-text,
+.VPNavBar .nav,
+.VPNavBar .actions,
+.VPNavBar .content-body {
+    background: transparent !important;
+}
+
+.VPNavBar.wrapper,
+.VPNav.wrapper,
+header.VPNavBar,
+header.VPNav {
+    background: rgba(84, 222, 189, 0.15) !important;
+}
+
+.dark .VPNavBar.wrapper,
+.dark .VPNav.wrapper,
+.dark header.VPNavBar,
+.dark header.VPNav {
+    background: rgba(84, 222, 189, 0.1) !important;
+}
+
+body .VPNav,
+body .VPNavBar,
+body .VPNav[class*='scroll'],
+body .VPNav[class*='sticky'],
+body header.VPNavBar,
+body header.VPNav {
+    background: rgba(84, 222, 189, 0.15) !important;
+}
+
+.VPNavBar,
+.VPNavBar *,
+.VPNav,
+.VPNav * {
+    background-color: inherit;
+}
+
+.VPNavBar,
+.VPNav {
+    background: rgba(84, 222, 189, 0.15) !important;
+}
+
+.dark .VPNav,
+.dark .VPNavBar,
+.dark .VPNavBar.top,
+.dark .VPNavBar:not(.top),
+.dark .VPNavBar.home:not(.top),
+.dark .VPNav.has-sidebar,
+.dark .VPNav:not(.has-sidebar),
+.dark .VPNav.wrapper,
+body.dark .VPNav,
+body.dark .VPNavBar,
+body.dark .VPNav[class*='scroll'],
+body.dark .VPNav[class*='sticky'] {
+    background: rgba(84, 222, 189, 0.1) !important;
+    border-bottom: 1px solid rgba(84, 222, 189, 0.15);
+}
+
+.VPNavBar .nav .item.active,
+.VPNavBar .nav .item.active a,
+.VPNavBar .nav a.active {
+    color: var(--vp-c-brand-1) !important;
+    font-weight: 600 !important;
+    position: relative;
+}
+
+.VPNavBar .nav .item.active::after,
+.VPNavBar .nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--vp-c-brand-1);
+    border-radius: 2px 2px 0 0;
+}
+
+.VPNavBar .nav .item:hover,
+.VPNavBar .nav a:hover {
+    color: var(--vp-c-brand-1) !important;
+    transition: color 0.2s ease;
+}
